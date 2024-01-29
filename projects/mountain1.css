@@ -1,0 +1,333 @@
+.mountain1{
+#blank1{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(44, 39, 39);
+}
+#parallax{
+    background-image: url(p.jpg);
+}
+#box3{
+    background-color: azure;
+    width: 200px;
+    height: 300px;
+}
+body{
+    
+    /* background-image: url(p.jpg); */
+}
+#box1{
+    background-color:rgb(185, 149, 216) ;
+    text-align: center;
+    position: absolute;
+     width: 100%;
+    height: 300px;
+    top: 0;
+     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid #000;
+    background-image: url(p.jpg);
+    
+}
+body {
+font-family: 'Red Hat Text', sans-serif;
+}
+
+.container {
+text-align: center;
+color: var(--color);
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+background-size: cover;
+background-position: center;
+
+/*  this is where the magic happens:  */
+background-attachment: fixed;
+}
+
+h1 {
+font-weight: 700;
+font-size: 3rem;
+}
+
+p {
+max-width: 52ch;
+line-height: 1.5;
+padding: 1em;
+}
+
+a {
+display: inline-block;
+padding: 1em 3.5em;
+background-color: var(--color);
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 0.3em;
+font-weight: 700;
+letter-spacing: .5px;
+font-size: .875rem;
+}
+
+.blank,
+.other {
+width: 100%;
+min-height: 60vh;
+background-color: var(--color);
+}
+
+.second {
+background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+background-attachment: fixed;
+height: 1200px;
+}
+
+h3 {
+font-weight: 700;
+font-size: 1.6rem;
+margin-top: 1em;
+}
+
+.card > a {
+margin-bottom: 2em;
+}
+
+.item {
+display: flex;
+max-width: 320px;
+background-color: white;;
+flex-direction: column;
+align-items: center;
+border-radius: .5em;
+-webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.img {
+width: 90%;
+height: 200px;
+background-color: lightgrey;
+background-size: cover;
+background-position: center;
+margin-top: 20px;
+border-radius: .3em;;
+}
+
+.img-first {
+background-image: url(https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1606&q=80);
+}
+
+.img-second {
+background-image: url(https://images.unsplash.com/photo-1628746404106-4d3843b231b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
+}
+
+.img-third {
+background-image: url(https://images.unsplash.com/photo-1632853073412-782bf0279d65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+.img-fourth {
+    background-image: url(https://img.freepik.com/free-photo/hiker-going-up-aiguille-du-midi_53876-139593.jpg?size=626&ext=jpg&ga=GA1.1.4069350.1702141682&semt=ais);
+    }
+
+
+
+.second {
+flex-direction: row;
+gap: 1.6em;
+}
+#mountain{
+background-color: aqua;
+height: 300px;
+}
+}
+.moonlight{
+    *{
+        margin: 0;
+        padding:0;
+        font-family:
+    }
+    body{
+        background: #0a2a43;
+        min-height: 1500px;
+    
+    }
+    section{
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    section::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(to top, #f1f8fd , transparent);
+        z-index: 10000;
+    
+    }
+    section::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( #ffffff);
+        z-index: 10000;
+        mix-blend-mode: color;
+    
+    }
+    
+    section img{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         pointer-events: none;
+    }
+    #text{
+        position: relative;
+        color: white;
+        font-size: 9em;
+        z-index: 1;
+    
+    }
+    #road{
+        z-index: 2;
+    }
+    }
+
+
+
+
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        background-color: #111222;
+    }
+    section{
+        position: realtive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 100px;
+        color: #fff;
+    }
+    .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      flex-direction: column;
+    }
+    .main-title{
+        font-size: 4em;
+        margin-bottom: 50px;
+    }
+    .content{
+        position: relative;
+        width: 1150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .image{
+        position: relative;
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .content .image img{
+        z-index: 111;
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .content .text-box{
+        z-index: 222;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        padding: 40px;
+        max-width: 400px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transform: translate(-80px , 50px);
+
+
+    }
+    .content .text-box h3{
+        font-size: 2em;
+        margin-bottom: 10px;
+
+    }
+    .media-icons{
+        margin-top: 100px;
+    }
+    .media-icons a{
+        color: white;
+        font-size: 2em;
+        margin: 40px;
+    }
+    .section-title{
+     font-size: 3em;
+     margin-bottom: 10px;   
+    }
+    .info{
+        width: 700px;
+        margin-left: 50px;
+    }
+    .info-title{
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+     .media-info{
+        width: 400px;
+        margin-left: 50px;
+     }
+     .media-info li{
+        list-style: none;
+        font-size: 1.4em;
+        /* padding: 20px; */
+     }
+     .media-info li a{
+        color: #fff;
+        text-decoration: none;
+     }
+
+     .media-info li:not(:last-child){
+        margin-bottom: 50px;
+     }
+     .media-info li:nth-child(1),.media-info li:nth-child(5){
+        padding-left: 100px;
+     }
+     .media-info li:nth-child(2),.media-info li:nth-child(4){
+        padding-left: 50px;
+     }
+     .sec3{
+        margin-bottom: 50px;
+     }
